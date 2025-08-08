@@ -32,7 +32,7 @@ export default function App() {
       <Text 
         style={{fontSize:32}}
         onPressIn={()=> console.log('press in')}
-        onPress={()=> console.log('pressed')}
+        onLongPress={() => console.log('long pressed')}
         onPressOut={() => console.log('pressed out')}
         >Componente principal</Text>
     </View>
