@@ -2,14 +2,15 @@ import { StyleSheet, Text, View } from 'react-native';
 
 export default function App() {
 
-  async function handlePress() {
-    console.log('Pressionado')
+  async function handlePress(id:number) {
+    console.log('Pressionado', id)
   }
 
   return (
     <View style={styles.container}>
-      <Text 
-       onPress={handlePress} 
+      <Text
+        style={{fontSize:18}} 
+        onPress={() => handlePress(5)} 
       >Open up App.tsx to start working on your app!</Text>
     </View>
   );
