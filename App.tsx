@@ -13,7 +13,7 @@ export default function App() {
 
   return (
     <View style={styles.container}>
-      <Text
+      {/* <Text
         onPress={() => console.log('Inline')}
         style={{ fontSize: 18 }}
       >Inline</Text>
@@ -28,7 +28,13 @@ export default function App() {
       <Text
         style={{ fontSize: 18 }}
         onPress={helloDarthVader}
-      >Another File Function</Text>
+      >Another File Function</Text> */}
+      <Text 
+        style={{fontSize:32}}
+        onPressIn={()=> console.log('press in')}
+        onPress={()=> console.log('pressed')}
+        onPressOut={() => console.log('pressed out')}
+        >Componente principal</Text>
     </View>
   );
 }
